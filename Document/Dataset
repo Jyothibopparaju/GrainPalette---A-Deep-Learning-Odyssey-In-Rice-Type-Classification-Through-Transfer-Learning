@@ -1,3 +1,1 @@
-data_dir = "../input/rice-image-dataset/Rice_Image_Dataset(2)"
-data_dir = pathlib.path(data_dir)
-data_dir
+datasets of rice

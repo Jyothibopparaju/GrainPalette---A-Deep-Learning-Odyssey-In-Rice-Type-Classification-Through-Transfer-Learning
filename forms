@@ -1,1 +1,10 @@
+from flask_wtf import FlaskForm
+from flask_wtf.file import FileField, FileAllowed, FileRequired
+from wtforms import SubmitField
 
+class UploadForm(FlaskForm):
+    file = FileField('Upload Rice Image', validators=[
+        FileRequired(),
+        FileAllowed(['jpg', 'png', 'jpeg'], 'Images only!')
+    ])
+    submit = SubmitField('Predict')

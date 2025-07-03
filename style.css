@@ -1,5 +1,59 @@
-c:\Users\boppa\OneDrive\Pictures\arborio2.jpg
-c:\Users\boppa\OneDrive\Pictures\basmati1.jpg
-c:\Users\boppa\OneDrive\Pictures\brown1.jpg
-c:\Users\boppa\OneDrive\Pictures\jasmine1.jpg
-c:\Users\boppa\OneDrive\Pictures\red7.jpg
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.hero {
+    background: url('rice.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: white;
+    color: black;
+}
+
+.navbar {
+    background: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
